@@ -20,3 +20,20 @@ Setup project:
 
     `php bin/console app:db-export csv`
 
+
+
+
+
+Also project can be executed with docker by using next command:
+
+    `sudo docker-compose -f docker-compose.yml up`
+
+After execute docker you should execute docker command prompt:
+
+    `docker-compose run php /bin/bash`
+
+And here you can use project with next commands:
+1) `php bin/console doctrine:migrations:migrate`
+1) `php bin/console app:db-export csv`
+
+Tested on Ubuntu 18.04
