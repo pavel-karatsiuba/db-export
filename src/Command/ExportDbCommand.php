@@ -1,4 +1,4 @@
-<?
+<?php
 namespace App\Command;
 
 use App\Utils\Exporter;

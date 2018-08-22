@@ -1,4 +1,4 @@
-<?
+<?php
 namespace App\Utils;
 
 use Symfony\Component\Serializer\Serializer;
