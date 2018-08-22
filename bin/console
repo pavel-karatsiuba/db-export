@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Debug\Debug;
 use Symfony\Component\Dotenv\Dotenv;
+use App\Command\ExportDbCommand;
 
 set_time_limit(0);
 
@@ -37,3 +38,4 @@ if ($debug) {
 $kernel = new Kernel($env, $debug);
 $application = new Application($kernel);
 $application->run($input);
+$application->add(new ExportDbCommand());
